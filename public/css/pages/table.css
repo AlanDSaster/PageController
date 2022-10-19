@@ -1,0 +1,68 @@
+/* table */
+.paginated-table {
+	border-collapse: collapse;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+/* thead */
+.paginated-table > thead {
+	position: sticky;
+	top: 0;
+	background-color: black;
+	color: white;
+}
+
+.paginated-table > thead th {
+	border-right: 4px double #fff;
+	border-bottom: 4px double black;
+}
+
+.paginated-table > thead th:hover {
+	background-color: #555;
+}
+
+.paginated-table thead tr th {
+	width: 1%;
+}
+
+.paginated-table thead tr th:last-child {
+	width: 99%;
+}
+
+/* tbody */
+.paginated-table > tbody td {
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* tfoot */
+.paginated-table > tfoot {
+	position: sticky;
+	bottom: 0;
+}
+
+.paginated-table > tfoot td {
+	background-color: black;
+	border: none;
+	text-align: center;
+	white-space: nowrap;
+	overflow: none;
+	height: 1em;
+	color: white;
+}
+
+.paginated-table > tfoot form {
+	display: inline-block;
+}
+
+.paginated-table tfoot td input[type='submit'] {
+	display: inline-block;
+	border: 1 px solid black;
+	border-radius: 1px;
+	width: 5em;
+	white-space: nowrap;
+	overflow: none;
+}
+
